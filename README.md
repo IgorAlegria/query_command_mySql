@@ -1,13 +1,42 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/> Projeto All For One
+Para praticar todos os conceitos de SQL. Buscar, Filtrar, Adicionar, Modificar dados na tabela e Manipular e deletar a tabela.
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+## Tecnologias usadas
+Back-end:
+> Desenvolvido usando: Docker, docker-compose, SQL, MySQL Workbench
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Instalando Dependências
+### Sem Docker
+
+1. Instale as dependências [Caso existam]
+```bash
+npm install
+``` 
+
+> :warning: Para rodar o projeto desta forma, obrigatoriamente você deve ter o ```node``` instalado em seu computador e o avaliador espera que seja a versão 16.
+
+## Com Docker :whale2:
+#### Backend
+
+1. Primeiro instale os containers: 
+```bash
+docker-compose up -d
+``` 
+
+2. Em seguida abra o terminal interativo do container: 
+```bash
+docker exec -it all_for_one bash
+``` 
+
+3. Instale as dependências dentro do container: 
+```bash
+npm install
+``` 
+#### Testes
+
+1. Dentro do terminal do container:
+```bash
+npm test
+``` 
+
+> :warning: Atenção: O git dentro do container não vem configurado com suas credenciais;
